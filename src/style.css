@@ -1,5 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+body {
+  background-color: green;
+}
+
 .card {
   width: 150px;
   height: 200px;
@@ -28,18 +32,36 @@
 
 .symbol {
   font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
-.top-left {
+.top-left,
+.bottom-right {
   position: absolute;
+  font-size: 16px;
 }
 
 .top-left {
   top: 10px;
+  left: 10px;
 }
 
 .bottom-right {
   bottom: 10px;
   right: 10px;
   transform: rotate(180deg);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bg-green {
+  background-color: green;
 }

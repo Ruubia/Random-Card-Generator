@@ -10,33 +10,40 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body
-    class="d-flex flex-colum justify-content-center align-items-center vh-100"
+    class="d-flex flex-colum justify-content-center align-items-center vh-100 bg-green"
   >
-    <div id="card" class="card text-center mb-3"></div>
-    <button class="btn btn-primary mb-3" onclick="generateRandomCard()">
-      Generate New Card
-    </button>
-    <div>
-      <input
-        type="number"
-        id="width-input"
-        class="form-control mr-2"
-        placeholder="width (px)"
-      />
-      <input
-        type="number"
-        id="height-input"
-        class="form-control mr-2"
-        placeholder="height (px)"
-      />
-      <button class="btn btn-secondary" onclick="setCardSize()">
-        Set Size
+    <div class="card-container text-center">
+      <div id="card" class="card text-center align-items-center mb-3"></div>
+      <button id="generateNewCard" class="btn btn-primary mb-3">
+        Generate New Card
       </button>
+      <div class="controls" id="Size">
+        <input
+          type="number"
+          id="width-input"
+          class="form-control mr-2"
+          placeholder="width (px)"
+        />
+        <input
+          type="number"
+          id="height-input"
+          class="form-control mr-2"
+          placeholder="height (px)"
+        />
+        <button id="setSize" class="btn btn-secondary">
+          Set Size
+        </button>
+      </div>
     </div>
-    <div class="fixed-bottom p-4">
+    <div class="fixed-bottom p-4 text-center">
       Made with ❤️ by
       <a href="https://github.com/Ruubia">Ruubia</a>
     </div>
